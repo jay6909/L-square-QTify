@@ -6,7 +6,7 @@ import './Navbar.css'
 
 export default () => {
     return <div className='navbar'>
-        <div>Logo</div>
+        <div><img src='./QtifyLogo.png'></img></div>
         <SearchBox />
         <Button>Give Feedback</Button>
     </div>
