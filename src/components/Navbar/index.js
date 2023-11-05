@@ -2,7 +2,7 @@
 import React from 'react'
 import SearchBox from '../SearchBox'
 import Button from '../Button'
-import './Navbar.css'
+import './Nav  bar.css'
 
 export default () => {
     return <div className='navbar'>
