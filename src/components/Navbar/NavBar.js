@@ -1,12 +1,11 @@
-import React from 'react'
-import SearchBox from '../SearchBox'
-import Button from '../Button'
+// import React from 'react'
+// import SearchBox from '../SearchBox'
+// import Button from '../Button'
 
-const Nav = () => {
-  return (
-    <div className='navbar'
-    </div>
-  )
-}
+// const Nav = () => {
+//   return (
 
-export default Nav
+//   )
+// }
+
+// export default Nav
