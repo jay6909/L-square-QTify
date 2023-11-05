@@ -10,7 +10,7 @@ export default () => {
       <button
         style={{
           width: "66px",
-          width: "48px",
+          height: "48px",
           displayL: "flex",
           justifyContent: "center",
           alignItems: "center",
