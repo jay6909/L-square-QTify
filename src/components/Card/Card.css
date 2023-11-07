@@ -1,0 +1,30 @@
+.card{
+    width: 159px;
+    height: 205px;
+    border-radius: 10px;
+    background-color: var(--css-white);
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+} 
+.album-img-holder{
+    width: 100%;
+    height: 80%;
+}
+.follow-holder{
+    display: flex;
+    border-radius: 0px 0px 10px 10px;
+    background-color: var(--css-white);
+    height: 20%;
+
+}
+.follow-button{
+    background-color: var(--css-black);
+    color: var(--css-white);
+    width: 71px;
+    height: 23px;
+    margin: 10px 10px ;
+    font-size: 10px;
+    border-radius: 10px;
+}
