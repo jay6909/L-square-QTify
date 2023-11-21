@@ -1,7 +1,0 @@
-.hero{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--css-black);
-    color: var(--css-white);
-}

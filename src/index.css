@@ -2,6 +2,7 @@
   --css-primary:#34c94b;
   --css-black:#121212;
   --css-white:#ffffff;
+  background-color: var(--css-black);
 
 }
 
@@ -25,6 +26,7 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  background-color: var(--css-black);
 }
 /*
   5. Improve media defaults

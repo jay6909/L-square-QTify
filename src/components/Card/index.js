@@ -1,18 +1,20 @@
-import React from 'react'
-import { ReactComponent as NewEnglishSong } from "./new-english-song.svg";
 
-import './Card.css'
-export default () => {
+import "./card.css";
+export default ({imgSrc, followersCount, label }) => {
   return (
-    <div className='card'>
-        <div className='album-img-holder'>
-            
-            <NewEnglishSong/>
+    <div className="card-wrapper">
+      <div className="card">
+        <div className="card-img-frame">
+          <img className="card-img" src={imgSrc}></img>
         </div>
-        <div className='follow-holder'>
-            <button className='follow-button'>100 follows</button>
-        </div>
-    </div>
-  )
-}
 
+        <div className="card-content">
+          <span className="card-content-pill">
+            <p>{followersCount} follows</p>
+          </span>
+        </div>
+      </div>
+      <p className="card-label">{label}</p>
+    </div>
+  );
+};

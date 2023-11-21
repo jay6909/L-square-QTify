@@ -11,7 +11,7 @@ export default () => {
         style={{
           width: "66px",
           height: "48px",
-          displayL: "flex",
+          display: "flex",
           justifyContent: "center",
           alignItems: "center",
           borderRadius: "0px 8px 8px 0px",
