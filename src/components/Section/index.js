@@ -1,6 +1,7 @@
 import "./section.css";
 import Card from "../Card";
 export default ({ title, data }) => {
+  console.log(data);
 
   return (
     <div className="section">
