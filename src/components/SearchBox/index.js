@@ -22,9 +22,9 @@ export default () => {
         <SearchIcon width={20} height={20} />
       </button>
     </form>
-    <div style={{position:'absolute', width:'570px',
+    {/* <div style={{position:'absolute', width:'570px',
     maxHeight:'550px', border:'5px solid red', overflowY: 'auto'}}>
-    </div>
+    </div> */}
    </div>
   );
 };
