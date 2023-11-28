@@ -1,0 +1,22 @@
+.swiper-slide{
+    color: white;
+}
+.carousel-container{
+    /* border: 2px solid red; */
+    position: relative;
+}
+.arrow{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    transform: translateY(-50%);
+    top: 40%;
+    z-index: 1;
+    cursor: pointer;
+}
+.arrow-left{
+    left: -15px;
+}
+.arrow-right{
+    right: -15px;
+}
