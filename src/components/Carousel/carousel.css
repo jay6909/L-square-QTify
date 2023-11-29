@@ -4,6 +4,7 @@
 .carousel-container{
     /* border: 2px solid red; */
     position: relative;
+    margin-top: 10px;
 }
 .arrow{
     position: absolute;

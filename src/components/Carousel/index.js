@@ -12,7 +12,7 @@ import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 import Card from '../Card';
 
-const index = ({ data }) => {
+const index = ({ data,navID }) => {
     return (
         <div className='carousel-container'>
             <Swiper className='swiper-slide'
@@ -24,7 +24,7 @@ const index = ({ data }) => {
                 // pagination={{
                 //   type: 'fraction',
                 // }}
-                navigation={{ nextEl: ".arrow-right", prevEl: ".arrow-left" }}
+                navigation={{ nextEl: `#arrow-right-${navID}`, prevEl: `#arrow-left-${navID}` }}
                 virtual
             >
                 {data.map((cardData) => (
@@ -53,10 +53,10 @@ const index = ({ data }) => {
 
       </div> */}
 
-            <div className='arrow-left arrow'> <LeftArrow />
+            <div id={`arrow-left-${navID}`} className='arrow-left arrow'> <LeftArrow />
 
             </div>
-            <div className='arrow-right arrow'> <RightArrow />
+            <div id={`arrow-right-${navID}`} className='arrow-right arrow'> <RightArrow />
 
             </div>
         </div>
