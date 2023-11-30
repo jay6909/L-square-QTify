@@ -30,9 +30,7 @@
 }
  .card-content{
     background-color: var(--css-white);
-    height: 30px;
-    flex: 1;
-
+    height: 35px;
     display: flex;
     justify-content: flex-start;
     align-items: center;

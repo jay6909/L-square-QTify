@@ -33,11 +33,11 @@ function App() {
   }, [])
   return (
     <div className="App">
-      <NavBar />
+      <NavBar topAlbums={topAlbums}/>
       <Hero />
-      <Section navID='ta' title='Top Albums' data={topAlbums} />
-      <Section navID='na' title='New Albums' data={newAlbums} />
-      <FilterSection title='Songs' data={filteredSongs} genres={genres}
+      <Section isAlbum={true} navID='ta' title='Top Albums' data={topAlbums} />
+      <Section isAlbum={true} navID='na' title='New Albums' data={newAlbums} />
+      <FilterSection isAlbum={false} title='Songs' data={filteredSongs} genres={genres}
       executeFilter={(genre)=>{
         if(genre==='all'){
           setFilteredSongs(songs)

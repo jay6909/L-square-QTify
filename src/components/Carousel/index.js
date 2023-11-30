@@ -12,7 +12,7 @@ import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 import Card from '../Card';
 
-const index = ({ data,navID }) => {
+const index = ({ data,navID, isAlbum,}) => {
     return (
         <div className='carousel-container'>
             <Swiper className='swiper-slide'
@@ -27,19 +27,39 @@ const index = ({ data,navID }) => {
                 navigation={{ nextEl: `#arrow-right-${navID}`, prevEl: `#arrow-left-${navID}` }}
                 virtual
             >
-                {data.map((cardData) => (
+
+                
+                {isAlbum ? data.map((cardData) => (
                     <SwiperSlide
                         key={cardData.id}
                     >
-
                         <Card
                             imgSrc={cardData.image}
                             label={cardData.title}
                             followersCount={cardData.follows}
+                            isAlbum={isAlbum}
+                            songsCount={cardData.songs.length}
                         />
                     </SwiperSlide>
 
-                ))}
+                )):
+
+                data.map((cardData) => (
+                    <SwiperSlide
+                        key={cardData.id}
+                    >
+                        <Card
+                            imgSrc={cardData.image}
+                            label={cardData.title}
+                            likesCount={cardData.likes}
+                            isAlbum={isAlbum}
+
+                        />
+                    </SwiperSlide>
+
+                ))
+                
+                }
 
 
             </Swiper>
