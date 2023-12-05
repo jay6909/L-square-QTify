@@ -26,7 +26,7 @@ export default ({ navID, title, data, isAlbum }) => {
                 label={cardData.title}
                 followersCount={cardData.follows}
                 songsCount={cardData.songs.length}
-                isAlbum
+                isAlbum={isAlbum}
 
               />
             )) :

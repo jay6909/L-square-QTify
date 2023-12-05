@@ -5,6 +5,8 @@ import Hero from './components/HeroSection';
 import NavBar from './components/Navbar';
 import Section from './components/Section';
 import FilterSection from './components/FilterSection'
+import FaqSection from './components/FaqSection';
+
 import axios from 'axios';
 
 const ENDPOINT = 'https://qtify-backend-labs.crio.do'
@@ -47,6 +49,7 @@ function App() {
         }
       }}
       />
+      <FaqSection/>
 
       {/* <Card/> */}
     </div>

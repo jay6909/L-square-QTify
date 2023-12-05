@@ -52,7 +52,7 @@ const index = ({ data,navID, isAlbum,}) => {
                             imgSrc={cardData.image}
                             label={cardData.title}
                             likesCount={cardData.likes}
-                            isAlbum={isAlbum}
+                            
 
                         />
                     </SwiperSlide>

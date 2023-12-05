@@ -8,7 +8,7 @@ export default ({ title, data, genres,executeFilter, isAlbum }) => {
     const [selectedTab, setSelectedTab] = useState(0)
 
     return (
-        <div className="section">
+        <div className="section" style={{borderTop: '2px  solid var(--css-primary)', borderBottom: '2px  solid var(--css-primary)'}}>
             <h1 className="title"> {title}</h1>
             <Tabs
             value={selectedTab}
